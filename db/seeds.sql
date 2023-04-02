@@ -4,6 +4,8 @@ VALUES (1,'Sales'),
        (2,'Marketing'),
        (3,'Engineering'),
        (4, 'Human Resources');
+    
+    SELECT * FROM department;
 
 
 
@@ -17,6 +19,8 @@ VALUES (1, 'Sales Manager', 90000.00, 1),
        (6, 'Database Administrator', 90000, 3),
        (7, 'Human Resources Manager', 80000, 4),
        (8, 'Recruiter', 60000, 4);
+    
+    SELECT * FROM roles;
 
 
 -- Insert Employess
@@ -29,3 +33,5 @@ VALUES (1, 'Bob','Biscuit', 1, NULL ),
        (6, 'Tabitha', 'Tomatoe', 6, 5),
        (7, 'Cassandra', 'Cabbage', 7, NULL),
        (8, 'Samantha', 'Salad', 8, 7);
+    
+    SELECT * FROM employee;
