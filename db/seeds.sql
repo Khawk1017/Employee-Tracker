@@ -4,7 +4,7 @@ VALUES (1,'Sales'),
        (2,'Marketing'),
        (3,'Engineering'),
        (4, 'Human Resources');
-    SELECT * FROM department;
+    
  
 
 
@@ -33,6 +33,5 @@ VALUES (1, 'Bob','Biscuit', 1, NULL ),
        (6, 'Tabitha', 'Tomatoe', 6, 5),
        (7, 'Cassandra', 'Cabbage', 7, NULL),
        (8, 'Samantha', 'Salad', 8, 7);
-    SELECT first_name, last_name
-    FROM employee;
+    
     
