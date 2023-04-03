@@ -4,15 +4,15 @@ VALUES (1,'Sales'),
        (2,'Marketing'),
        (3,'Engineering'),
        (4, 'Human Resources');
-    
     SELECT * FROM department;
+ 
 
 
 
 --  Insert roles
 INSERT INTO roles (id, title, salary, department_id)
 VALUES (1, 'Sales Manager', 90000.00, 1),
-       (2, 'Sales Respestive', 45000.00, 1),
+       (2, 'Sales Respective', 45000.00, 1),
        (3, 'Marketing Manager', 85000.00, 2),
        (4, 'Marketing Coordinator', 50000.00, 2),
        (5, 'Software Engineer', 100000.00, 3),
@@ -20,7 +20,7 @@ VALUES (1, 'Sales Manager', 90000.00, 1),
        (7, 'Human Resources Manager', 80000, 4),
        (8, 'Recruiter', 60000, 4);
     
-    SELECT * FROM roles;
+    
 
 
 -- Insert Employess
@@ -33,5 +33,6 @@ VALUES (1, 'Bob','Biscuit', 1, NULL ),
        (6, 'Tabitha', 'Tomatoe', 6, 5),
        (7, 'Cassandra', 'Cabbage', 7, NULL),
        (8, 'Samantha', 'Salad', 8, 7);
+    SELECT first_name, last_name
+    FROM employee;
     
-    SELECT * FROM employee;
