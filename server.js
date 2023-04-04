@@ -4,7 +4,7 @@ const connection = require('./db/connection');
 
 // Defining function to retrieve all departments from the database
 function viewAllDepartments() {
-    connection.query("SELECT * FROM departments", (err, results) => {
+    connection.query("SELECT * FROM department", (err, results) => {
         if (err) throw err;
         console.log(results);
     });
@@ -261,6 +261,8 @@ function deleteRole() {
             });
     });
 }
+
+main();
 
 function main(){
 inquirer
