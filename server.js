@@ -42,7 +42,7 @@ function viewAllEmployees() {
                 if (err) throw err;
                 console.log(`Department ${departmentName} has been added to the database`);
                 //  Call the main menu prompt again
-                mainMenuPrompt();
+                main();
             }
         );
     })
@@ -84,7 +84,7 @@ function viewAllEmployees() {
                 if (err) throw err;
                 console.log(`Role ${title} has been added to the database.`);
                 // call the main menu prompt again
-                mainMenuPrompt();
+                main();
             }
         );
     });
@@ -121,7 +121,7 @@ function viewAllEmployees() {
                 if (err) throw err;
                 console.log(`Employee ${firstName} ${lastName} has been added to the database. `);
                 //  Call the main menu prompt 
-                mainMenuPrompt();
+                main();
             }
         );
     });
@@ -152,7 +152,7 @@ function updateEmployeeRole() {
             if (err) throw err;
             console.log(`Successfully updated employee ${employeeId} with role ${roleId}`);
             // Return to the main menu
-            showMainMenu();
+            main();
         });
     });
 }
@@ -197,11 +197,11 @@ function updateEmployeeRole() {
 }
 
 // Connect to the database and call the deleteDepartment function
-connection.connect(err => {
-    if (err) throw err;
-    console.log(`Connected to database as id ${connection.threadId}`);
-    deleteDepartment();
-});
+// connection.connect(err => {
+//     if (err) throw err;
+//     console.log(`Connected to database as id ${connection.threadId}`);
+//     deleteDepartment();
+// });
 
 // Function to delete an employee from the database
 function deleteEmployee() {
@@ -232,7 +232,7 @@ function deleteEmployee() {
                     if (err) throw err;
 
                     console.log(`Deleted employee "${answers.employeeToDelete}" from the database.`);
-                    mainMenu();
+                    main();
                 }
             );
         });
@@ -256,13 +256,13 @@ function deleteRole() {
                 connection.query('DELETE FROM roles WHERE id = ?', [roleToDelete.id], (err, result) => {
                     if (err) throw err;
                     console.log(`Successfully deleted ${answer.roleToDelete} role!`);
-                    mainMenu();
+                    main();
                 });
             });
     });
 }
 
-
+function main(){
 inquirer
     .prompt([
         {
@@ -327,3 +327,4 @@ inquirer
 
         }
     });
+}
