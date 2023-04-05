@@ -6,15 +6,18 @@ const connection = require('./db/connection');
 function viewAllDepartments() {
     connection.query("SELECT * FROM department", (err, results) => {
         if (err) throw err;
-        console.log(results);
+        console.table(results);
+        main();
     });
+
 }
 
 // Defining function to retrieve all roles from the database
 function viewAllRoles() {
     connection.query("SELECT * FROM roles", (err, results) => {
         if (err) throw err;
-        console.log(results);
+        console.table(results);
+        main();
     });
 }
 
@@ -22,7 +25,8 @@ function viewAllRoles() {
 function viewAllEmployees() {
     connection.query("SELECT * FROM employee", (err, results) => {
         if (err) throw err;
-        console.log(results);
+        console.table(results);
+        main();
     });
 }
 
