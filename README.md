@@ -33,7 +33,7 @@ If you have any questions about the repo, open an issue or contact khawk1017 dir
 
 ## My Video
 
-<video width="640" height="480" controls>
+<video width="640" height="360" controls>
   <source src="EmployeeTracker.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
