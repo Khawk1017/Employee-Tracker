@@ -32,11 +32,7 @@ If you have any questions about the repo, open an issue or contact khawk1017 dir
 
 
 ## My Video
-
-<video width="640" height="360" controls>
-  <source src="EmployeeTracker.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+[EmployeeTracker.webm](https://user-images.githubusercontent.com/120533670/230308101-d1fb4203-1569-45b5-a36c-ae1e4cf3eeb5.webm)
 
 
 
