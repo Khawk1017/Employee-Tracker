@@ -4,14 +4,14 @@
 **The employee tracker is a command-line interface (CLI) application that allows users to manage employee data in a MySQL database. Users can view employee information, add new employees, update existing employee data, and delete employees**
 
 # Table of Contents
-* [Installtion](#installtion)
+* [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
 * [Contributing](#contributing)
 * [Tests](#tests)
 * [Questions](#questions)
 
-# Installtion
+# Installation
 The following necessary dependencies must be installed to run the application: Inquirer mysql2 
 
 # Usage
